@@ -1,0 +1,54 @@
+{
+    "name": "@innodep/tms-react-gis",
+    "packageManager": "yarn@3.4.1",
+    "description": "Creating a React Component Library Boiler Plate, with yarn berry, rollup",
+    "license": "UNLICENSED",
+    "version": "1.0.0",
+    "author": "Innodep. TMS Development Division, Development Team 2 <jsj@innodep.com>",
+    "main": "./dist/index.js",
+    "module": "./dist/index.es.js",
+    "browser": "./dist/index.umd.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "build": "rollup -c",
+        "build:watch": "rollup -cw"
+    },
+    "peerDependencies": {
+        "react": "^16 || ^17 || ^18",
+        "react-dom": "^16 || ^17 || ^18"
+    },
+    "dependencies": {
+        "ol": "~7.3.0",
+        "proj4": "~2.9.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.21.3",
+        "@babel/preset-env": "^7.20.2",
+        "@babel/preset-flow": "^7.18.6",
+        "@babel/preset-react": "^7.18.6",
+        "@babel/preset-typescript": "^7.21.0",
+        "@rollup/plugin-babel": "^6.0.3",
+        "@rollup/plugin-commonjs": "^24.0.1",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@types/proj4": "^2.5.2",
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "^18.0.11",
+        "@typescript-eslint/eslint-plugin": "^5.55.0",
+        "@typescript-eslint/parser": "^5.55.0",
+        "eslint": "^8.36.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.32.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "postcss": "^8.4.21",
+        "prettier": "^2.8.4",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "rollup": "~3.20.2",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-postcss": "^4.0.2",
+        "rollup-plugin-typescript2": "^0.34.1",
+        "sass": "^1.59.3",
+        "typescript": "~4.9.5"
+    }
+}

@@ -1,0 +1,12 @@
+import { Feature } from "ol";
+import { Circle } from "ol/geom";
+import VectorSource from "ol/source/Vector";
+import Style, { StyleLike } from "ol/style/Style";
+export declare const getPointFeature: (coordinates: number[]) => Feature;
+export declare const getLineFeature: (coordinates: number[][]) => Feature;
+export declare const getCircleFeature: (coordinates: number[], radius: number) => Feature;
+export declare const getCircleGradientFeature: (coordinates: number[], radius: number) => Feature<Circle>;
+export declare const setFeatureStyle: (feature: Feature, style: Style | StyleLike) => void;
+export declare const getFindFeature: (vectorSource: VectorSource, featurePropKey: string, featurePropValue: string | number) => Feature | undefined;
+export declare const getFindFeatures: (vectorSource: VectorSource, featurePropKey: string, featurePropValue: string | number) => Feature[] | undefined;
+export declare const removeDuplicateFeatures: (vectorSource: VectorSource, key: string, value: string) => void;

@@ -1,0 +1,23 @@
+{
+    "arrowParens": "always",
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": true,
+    "useTabs": false,
+    "overrides": [
+        {
+        "files": ["*.css", "*.scss", "*.sass"],
+            "options": {
+                "singleQuote": true
+            }
+        },
+        {
+            "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+            "options": {
+                "singleQuote": false,
+                "printWidth": 120,
+                "semi": true
+            }
+        }
+    ]
+}
